@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Facebook Page Search!</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="content">
+	<div id="page-header">
+	  <div id="page-name">
+	    facebook PAGESEARCH
+	  </div>
+	  <div id="page-favorite" onclick="displayFavoritePages(event);">
+	    My favorite pages
+	  </div>
+	</div>
+	<div id="page-body">
+	  <div id="header-search-box">
+	    <div id="header-search-div">
+		  <span id="search-box">
+			<input id="input-box" placeholder="Enter the name of a page" autofocus style="border-color: #7B7B7B;" onkeypress="searchPage(event);">
+		  </span>
+		</div>
+      </div>
+	  <div id="page-listings">
+	    <div id="content" class="result">
+		</div>
+		<div id="pagination">
+		  <a id="previous" onclick="displayPreviousPage(event);">Previous</a>
+		  <a id="next" onclick="displayNextPage(event);">Next</a>
+	    </div>
+	  </div>
+	</div>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
